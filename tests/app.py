@@ -3,7 +3,7 @@ from datetime import timedelta
 
 
 app = Celery(
-    'chard',
+    'swisschard',
     broker='redis://',
     backend='redis://',
     include=[
@@ -16,7 +16,7 @@ app.conf.update(
     CELERY_ACCEPT_CONTENT=['json'],
     CELERY_TASK_SERIALIZER="json",
     CELERY_TASK_RESULT_EXPIRES=timedelta(hours=1),
-    CELERYBEAT_SCHEDULER="chard.scheduler.ChardScheduler",
+    CELERYBEAT_SCHEDULER="swisschard.scheduler.ChardScheduler",
     CELERY_REDIS_SCHEDULER_URL="redis://",
     CELERYBEAT_SCHEDULE = {
         'heart_beat': {

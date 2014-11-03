@@ -7,7 +7,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 REQUIREMENTS = ["redis"]
 
 README = """
-Chard - redis backed scheduler for celery beat.
+swiss-chard - redis backed scheduler for celery beat.
 
 The MIT License (MIT)
 
@@ -34,14 +34,14 @@ THE SOFTWARE.
 """
 
 setup(
-    name='chard',
+    name='swiss-chard',
     version='1.0.0',
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
-    description='Chard - redis backed scheduler for celery beat.',
+    description='swiss-chard - redis backed scheduler for celery beat.',
     long_description=README,
-    url='https://github.com/SPSCommerce/chard',
+    url='https://github.com/SPSCommerce/swiss-chard',
     author='pjdecoursey',
     author_email='webapps@spscommerce.com',
     install_requires=REQUIREMENTS

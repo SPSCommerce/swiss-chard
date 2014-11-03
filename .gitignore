@@ -1,2 +1,4 @@
 .DS_Store
 .coverage
+swiss_chard.egg-info
+dist

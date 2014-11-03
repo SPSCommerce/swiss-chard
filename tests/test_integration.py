@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import unittest
-from chard.scheduler import ChardScheduler, ENTRY_LIST_KEY
+from swisschard.scheduler import ChardScheduler, ENTRY_LIST_KEY
 from redis import StrictRedis
 from redlock import Redlock
 from celery.task import Task
